@@ -12,8 +12,14 @@
 /*=============Buttom List=============*/
 const listaBox = document.querySelectorAll(".dropdown");
 listaBox.forEach((card) => {
-  card.addEventListener("click", (element) => {
+  card.querySelector(".dropbtn").addEventListener("click", (element) => {
     const dropdowncontate = card.querySelector(".dropdown-content");
     dropdowncontate.classList.toggle("animation");
+    document.querySelectorAll(".dropbtn").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    element.target.classList.add("active");
+
+    console.log(element);
   });
 });

@@ -186,7 +186,8 @@ nav {
 }
 
 .dropbtn:hover,
-.dropbtn:focus {
+.dropbtn:focus,
+.dropbtn.active {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset,
